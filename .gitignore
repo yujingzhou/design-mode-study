@@ -1,0 +1,47 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+log.path_IS_UNDEFINED
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.iml
+**/**.iml
+target
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+log*
+
+### VS Code ###
+.vscode/
+/arthas-output/
+/qsc-insur-ad-log/
+/.idea/
+/.idea/libraries/
+/.idea/*
+/.idea/*.xml
+.idea/*.xml
+*/*/*.iml
+/*/*.iml
+
+**/.idea/
