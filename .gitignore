@@ -13,6 +13,7 @@ log.path_IS_UNDEFINED
 .settings
 .springBeans
 .sts4-cache
+out
 
 ### IntelliJ IDEA ###
 .idea
