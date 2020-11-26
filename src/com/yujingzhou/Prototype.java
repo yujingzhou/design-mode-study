@@ -19,7 +19,7 @@ class Realizetype implements Cloneable {
 }
 
 //原型模式的测试类
-public class PrototypeTest {
+public class Prototype {
     public static void main(String[] args) throws CloneNotSupportedException {
         Realizetype obj1 = new Realizetype();
         Realizetype obj2 = (Realizetype) obj1.clone();
