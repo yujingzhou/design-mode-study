@@ -12,8 +12,8 @@ public class FactoryMethod {
      * @param args
      */
     public static void main(String[] args) {
-        AbstractFactory abstractFactory = new ConcreteFactory1();
-        Product product = abstractFactory.newProduct();
+        AbstractFactory1 abstractFactory1 = new ConcreteFactory11();
+        Product product = abstractFactory1.newProduct();
         product.show();
     }
 }
@@ -37,11 +37,11 @@ class ConcreteProduct2 implements Product {
     }
 }
 //抽象工厂：提供了厂品的生成方法
-interface AbstractFactory {
+interface AbstractFactory1 {
     Product newProduct();
 }
 //具体工厂1：实现了厂品的生成方法
-class ConcreteFactory1 implements AbstractFactory {
+class ConcreteFactory11 implements AbstractFactory1 {
     @Override
     public Product newProduct() {
         System.out.println("具体工厂1生成-->具体产品1...");
@@ -49,7 +49,7 @@ class ConcreteFactory1 implements AbstractFactory {
     }
 }
 //具体工厂2：实现了厂品的生成方法
-class ConcreteFactory2 implements AbstractFactory {
+class ConcreteFactory12 implements AbstractFactory1 {
     @Override
     public Product newProduct() {
         System.out.println("具体工厂2生成-->具体产品2...");
