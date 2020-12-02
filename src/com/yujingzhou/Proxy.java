@@ -7,7 +7,7 @@ package com.yujingzhou;
  */
 //抽象主题
 interface Subject {
-    void Request();
+    void request();
 }
 
 //真实主题
@@ -18,7 +18,7 @@ class RealSubject implements Subject {
     }
 
     @Override
-    public void Request() {
+    public void request() {
         System.out.println("访问真实主题方法...");
     }
 }
@@ -28,12 +28,12 @@ public class Proxy implements Subject {
     private RealSubject realSubject;
 
     @Override
-    public void Request() {
+    public void request() {
         if (realSubject == null) {
             realSubject = new RealSubject();
         }
         preRequest();
-        realSubject.Request();
+        realSubject.request();
         postRequest();
     }
 
@@ -47,6 +47,6 @@ public class Proxy implements Subject {
 
     public static void main(String[] args) {
         Proxy proxy = new Proxy();
-        proxy.Request();
+        proxy.request();
     }
 }
